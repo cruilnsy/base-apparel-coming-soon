@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+        <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <main class="container">
+            <header class="header-wrapper">
+
+                <img src="images/logo.svg" alt="brand logo" class="logo" />
+            </header>
+            <section class="image-wrapper">
+                <picture>
+                    <source media="(min-width:1440px)" srcset="images/hero-desktop.jpg">
+                    <img src="images/hero-mobile.jpg" alt="brand model picture" />
+                </picture>
+            </section>
+            <section class="content-wrapper">
+                <h1>
+                    <span class="first">We're</span> 
+                    <span class="second">coming soon</span>
+                </h1>
+                <p class="description">
+                    Hello fellow shoppers! We're currently building our new fashion store. 
+                    Add your email below to stay up-to-date with announcements and our launch deals.
+                </p>
+                <form name="subscribeForm" class="subscribe-form" onsubmit="submitForm(event)">
+                    <input type="text" name="email" aria-label="Email Address" placeholder="Email Address" />
+                    <button type="submit" name="subscribe" aria-label="Subscribe Button">
+                        <img src="images/icon-arrow.svg" alt="" />
+                    </button>
+                    <img class="error-icon" src="images/icon-error.svg" />
+                    <span class="error-message">Subscribe is not successful.</span>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Your Name Here</a>.
+            </p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+    
+</html>
